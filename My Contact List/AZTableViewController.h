@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AZTableViewController : UITableViewController
+@interface AZTableViewController : UITableViewController <UITableViewDelegate,UITableViewDataSource>
 
 @end

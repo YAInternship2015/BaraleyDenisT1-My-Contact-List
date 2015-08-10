@@ -15,6 +15,7 @@
 		84A626A41B78C0F000BF7DD1 /* My_Contact_ListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A626A31B78C0F000BF7DD1 /* My_Contact_ListTests.m */; };
 		84A626AF1B78C15400BF7DD1 /* AZTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A626AE1B78C15400BF7DD1 /* AZTableViewController.m */; };
 		84A626B21B78C1AD00BF7DD1 /* AZTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A626B11B78C1AD00BF7DD1 /* AZTableViewCell.m */; };
+		84A626B51B78C36E00BF7DD1 /* AZDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A626B41B78C36E00BF7DD1 /* AZDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		84A626AE1B78C15400BF7DD1 /* AZTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZTableViewController.m; sourceTree = "<group>"; };
 		84A626B01B78C1AD00BF7DD1 /* AZTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZTableViewCell.h; sourceTree = "<group>"; };
 		84A626B11B78C1AD00BF7DD1 /* AZTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZTableViewCell.m; sourceTree = "<group>"; };
+		84A626B31B78C36E00BF7DD1 /* AZDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZDataSource.h; sourceTree = "<group>"; };
+		84A626B41B78C36E00BF7DD1 /* AZDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				84A626B11B78C1AD00BF7DD1 /* AZTableViewCell.m */,
 				84A626AD1B78C15400BF7DD1 /* AZTableViewController.h */,
 				84A626AE1B78C15400BF7DD1 /* AZTableViewController.m */,
+				84A626B31B78C36E00BF7DD1 /* AZDataSource.h */,
+				84A626B41B78C36E00BF7DD1 /* AZDataSource.m */,
 				84A626941B78C0F000BF7DD1 /* Images.xcassets */,
 				84A626961B78C0F000BF7DD1 /* LaunchScreen.xib */,
 				84A626871B78C0F000BF7DD1 /* Supporting Files */,
@@ -224,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A626B51B78C36E00BF7DD1 /* AZDataSource.m in Sources */,
 				84A626AF1B78C15400BF7DD1 /* AZTableViewController.m in Sources */,
 				84A6268D1B78C0F000BF7DD1 /* AppDelegate.m in Sources */,
 				84A626B21B78C1AD00BF7DD1 /* AZTableViewCell.m in Sources */,
