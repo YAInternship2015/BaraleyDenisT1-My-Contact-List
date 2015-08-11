@@ -14,7 +14,8 @@
 @property (readonly,nonatomic) NSString* imageName;
 
 
-- (id)initWithName:(NSString*)name contactImageName:(NSString*)imageName;
+- (id)initWithName:(NSString*)name
+  contactImageName:(NSString*)imageName;
 
 @end
 
