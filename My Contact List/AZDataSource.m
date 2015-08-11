@@ -7,18 +7,42 @@
 //
 
 #import "AZDataSource.h"
+#import "AZContact.h"
+
+@interface AZDataSource()
+
+
+
+
+@end
+
+
 
 @implementation AZDataSource
+
+
 - (id)init
 {
     self = [super init];
+    if (self) {
+        
     
-    _contactArray = [NSArray arrayWithObjects:@"Yana",@"Olya",@"Nastya",@"Katya",@"Igor",@"Dima",@"Lesha",@"Ira",@"Natasha",@"Lina",nil];
     
-    _imageContactArray = [NSArray
-                          arrayWithObjects:@"1.jpg", @"2.jpg", @"3.jpg", @"4.jpg", @"5.jpg", @"6.jpg", @"7.jpg", @"8.jpg", @"9.jpg", @"10.jpg",nil];
+        AZContact *lina = [[AZContact alloc] initWithName:@"Lina" contactImageName:@"1.jpg"];
+        AZContact *olya = [[AZContact alloc] initWithName:@"Olya" contactImageName:@"2.jpg"];
+        AZContact *sveta = [[AZContact alloc] initWithName:@"Sveta" contactImageName:@"3.jpg"];
+        AZContact *alena= [[AZContact alloc] initWithName:@"Alena" contactImageName:@"4.jpg"];
+        AZContact *oleg = [[AZContact alloc] initWithName:@"Oleg" contactImageName:@"5.jpg"];
+        AZContact *misha = [[AZContact alloc] initWithName:@"Misha" contactImageName:@"6.jpg"];
+        AZContact *igor = [[AZContact alloc] initWithName:@"Igor" contactImageName:@"7.jpg"];
+        AZContact *nastya = [[AZContact alloc] initWithName:@"Nastya" contactImageName:@"8.jpg"];
+        AZContact *katya = [[AZContact alloc] initWithName:@"Katya" contactImageName:@"9.jpg"];
+        AZContact *natasha = [[AZContact alloc] initWithName:@"Natasha" contactImageName:@"10.jpg"];
+        _contactArray = [NSArray arrayWithObjects:lina,olya,sveta,alena,oleg,misha,igor,nastya,katya,natasha, nil];
+        
     
-    return self;
+  
+}  return self;
 }
 
 @end

@@ -26,6 +26,7 @@
 		84A626C81B78C3F600BF7DD1 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84A626BE1B78C3F600BF7DD1 /* 8.jpg */; };
 		84A626C91B78C3F600BF7DD1 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84A626BF1B78C3F600BF7DD1 /* 9.jpg */; };
 		84A626CA1B78C3F600BF7DD1 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84A626C01B78C3F600BF7DD1 /* 10.jpg */; };
+		84A925B11B79DD490074C40F /* AZContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A925B01B79DD490074C40F /* AZContact.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		84A626BE1B78C3F600BF7DD1 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
 		84A626BF1B78C3F600BF7DD1 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
 		84A626C01B78C3F600BF7DD1 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
+		84A925AF1B79DD490074C40F /* AZContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AZContact.h; sourceTree = "<group>"; };
+		84A925B01B79DD490074C40F /* AZContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AZContact.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				84A626AE1B78C15400BF7DD1 /* AZTableViewController.m */,
 				84A626B31B78C36E00BF7DD1 /* AZDataSource.h */,
 				84A626B41B78C36E00BF7DD1 /* AZDataSource.m */,
+				84A925AF1B79DD490074C40F /* AZContact.h */,
+				84A925B01B79DD490074C40F /* AZContact.m */,
 				84A626941B78C0F000BF7DD1 /* Images.xcassets */,
 				84A626961B78C0F000BF7DD1 /* LaunchScreen.xib */,
 				84A626871B78C0F000BF7DD1 /* Supporting Files */,
@@ -282,6 +287,7 @@
 				84A6268D1B78C0F000BF7DD1 /* AppDelegate.m in Sources */,
 				84A626B21B78C1AD00BF7DD1 /* AZTableViewCell.m in Sources */,
 				84A6268A1B78C0F000BF7DD1 /* main.m in Sources */,
+				84A925B11B79DD490074C40F /* AZContact.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +478,7 @@
 				84A626A91B78C0F000BF7DD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84A626AA1B78C0F000BF7DD1 /* Build configuration list for PBXNativeTarget "My Contact ListTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +487,7 @@
 				84A626AC1B78C0F000BF7DD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

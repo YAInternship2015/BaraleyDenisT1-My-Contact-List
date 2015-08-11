@@ -7,17 +7,55 @@
 //
 
 #import "AZTableViewCell.h"
+#import "AZDataSource.h"
+#import "AZContact.h"
+
+@interface AZTableViewCell ()
+
+@property (weak, nonatomic) IBOutlet UILabel *myText;
+@property (weak, nonatomic) IBOutlet UIImageView *myImage;
+
+
+
+@end
+
+
+
 
 @implementation AZTableViewCell
 
-- (void)awakeFromNib {
-    // Initialization code
+
+
+-(void) setupObject:(AZContact*) object{
+   
+    
+    [self.myImage setImage:[UIImage imageNamed:object.imageName]];
+    [self.myText setText: object.name];
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
 
-    // Configure the view for the selected state
-}
+
+
+  /*  object = [[AZTableViewCell alloc]init];a
+   
+   
+    
+   
+    
+    AZContact *currentContact = [contacts.contactArray objectAtIndex:i];
+    
+    object.myText.text = currentContact.name;
+    object.myImage.image = [UIImage imageNamed:currentContact.imageName];
+    
+    }*/
+   
+    
+   
+    
+
+
+    
+
+
 
 @end
