@@ -55,10 +55,6 @@
     
     tableView.rowHeight = 80;
     
-    
-    
-   
-    
     return cell;
 }
 
