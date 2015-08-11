@@ -10,9 +10,8 @@
 
 @interface AZDataSource : NSObject
 
-@property (strong, nonatomic) NSArray *contactArray;
-@property (strong, nonatomic) NSArray *imageContactArray;
+@property (readonly,nonatomic) NSArray *contactArray;
 
--(id)init;
+
 
 @end

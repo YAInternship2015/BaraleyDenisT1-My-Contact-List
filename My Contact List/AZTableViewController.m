@@ -9,20 +9,21 @@
 #import "AZTableViewController.h"
 #import "AZDataSource.h"
 #import "AZTableViewCell.h"
+#import "AZContact.h"
 
 @interface AZTableViewController ()
 
-@property (strong,nonatomic) AZDataSource *data;
+@property (strong,nonatomic) AZDataSource *contacts;
 
 @end
 
 @implementation AZTableViewController
-@synthesize data;
+@synthesize contacts;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    data = [[AZDataSource alloc]init];
+    contacts = [[AZDataSource alloc]init];
     
 }
 
@@ -41,19 +42,24 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     
-    return data.contactArray.count;
+    return contacts.contactArray.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    AZTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    cell.myText.text = [data.contactArray objectAtIndex:indexPath.row];
-    cell.myImage.image = [UIImage imageNamed:[data.imageContactArray objectAtIndex:indexPath.row]];
+   AZTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"
+                                       forIndexPath:indexPath];
+   
+    
+    AZContact *currentContact = [contacts.contactArray objectAtIndex:indexPath.row];
+    [cell setupObject:currentContact];
+    
+    tableView.rowHeight = 80;
+    
+    
+    
+   
     
     return cell;
-}
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 80;
 }
 
 

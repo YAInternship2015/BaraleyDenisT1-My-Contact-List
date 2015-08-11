@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface AZTableViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UILabel *myText;
-@property (weak, nonatomic) IBOutlet UIImageView *myImage;
+
+-(void) setupObject:(id)object;
+
 
 @end
