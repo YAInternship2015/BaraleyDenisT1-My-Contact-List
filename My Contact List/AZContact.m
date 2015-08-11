@@ -14,8 +14,7 @@
   contactImageName:(NSString*)imageName {
     
     self = [super init];
-    if (self)
-    {
+    if (self) {
         _name = name;
         _imageName = imageName;
     }

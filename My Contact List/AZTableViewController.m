@@ -45,14 +45,15 @@
     return contacts.contactArray.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-   AZTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    tableView.rowHeight = 80;
+   AZTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"
+                                       forIndexPath:indexPath];
+   
     
     AZContact *currentContact = [contacts.contactArray objectAtIndex:indexPath.row];
     [cell setupObject:currentContact];
     
-    
+    tableView.rowHeight = 80;
     
     
     

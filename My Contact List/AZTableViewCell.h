@@ -10,7 +10,6 @@
 
 @interface AZTableViewCell : UITableViewCell
 
-
 -(void) setupObject:(id)object;
 
 

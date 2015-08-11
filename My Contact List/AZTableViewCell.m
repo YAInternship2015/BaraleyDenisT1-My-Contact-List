@@ -24,8 +24,6 @@
 
 @implementation AZTableViewCell
 
-
-
 -(void) setupObject:(AZContact*) object{
    
     
@@ -34,27 +32,6 @@
 }
 
 
-
-
-  /*  object = [[AZTableViewCell alloc]init];a
-   
-   
-    
-   
-    
-    AZContact *currentContact = [contacts.contactArray objectAtIndex:i];
-    
-    object.myText.text = currentContact.name;
-    object.myImage.image = [UIImage imageNamed:currentContact.imageName];
-    
-    }*/
-   
-    
-   
-    
-
-
-    
 
 
 
