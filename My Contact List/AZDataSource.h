@@ -13,5 +13,4 @@
 @property (readonly,nonatomic) NSArray *contactArray;
 
 
-
 @end

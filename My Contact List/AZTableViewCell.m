@@ -16,23 +16,16 @@
 @property (weak, nonatomic) IBOutlet UIImageView *myImage;
 
 
-
 @end
-
-
 
 
 @implementation AZTableViewCell
 
--(void) setupObject:(AZContact*) object{
+-(void) setupObject:(AZContact*) object {
    
-    
     [self.myImage setImage:[UIImage imageNamed:object.imageName]];
     [self.myText setText: object.name];
 }
-
-
-
 
 
 @end
