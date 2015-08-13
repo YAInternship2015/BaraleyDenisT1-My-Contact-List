@@ -12,7 +12,7 @@
 
 - (id)initWithName:(NSString*)name
   contactImageName:(NSString*)imageName {
-    
+#warning лишняя пустая строка
     self = [super init];
     if (self) {
         _name = name;

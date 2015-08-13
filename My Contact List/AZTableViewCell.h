@@ -10,6 +10,7 @@
 
 @interface AZTableViewCell : UITableViewCell
 
+#warning обратите внимание на форматирование кода, отступы. Правильно записаный метод выглядит так - (void)setupObject:(id)object;
 -(void) setupObject:(id)object;
 
 

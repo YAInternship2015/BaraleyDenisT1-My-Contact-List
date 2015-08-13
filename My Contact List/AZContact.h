@@ -10,9 +10,12 @@
 
 @interface AZContact : NSObject
 
+#warning @property (nonatomic, strong, readonly) NSString *name;
 @property (readonly,nonatomic) NSString* name;
 @property (readonly,nonatomic) NSString* imageName;
 
+
+#warning - (id)initWithName:(NSString *)name contactImageName:(NSString *)imageName;
 
 - (id)initWithName:(NSString*)name
   contactImageName:(NSString*)imageName;
