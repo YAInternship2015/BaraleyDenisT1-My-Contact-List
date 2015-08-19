@@ -23,7 +23,7 @@
 - (void)setupObject:(AZContact *)object {
    
     [self.myImage setImage:[UIImage imageNamed:object.imageName]];
-    [self.myText setText: object.name];
+    [self.myText setText:object.name];
 }
 
 @end

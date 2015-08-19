@@ -9,6 +9,13 @@
 #import "AZDataSource.h"
 #import "AZContact.h"
 
+@interface AZDataSource ()
+
+@property (readonly,nonatomic) NSArray *contactArray;
+
+@end
+
+
 @implementation AZDataSource
 
 - (id)init {
@@ -29,6 +36,14 @@
                          lina,olya,sveta,alena,oleg,misha,igor,nastya,katya,natasha, nil];
     }
     return self;
+}
+
+- (NSInteger)itemsCount {
+    return [_contactArray count];
+}
+
+- (AZDataSource *)itemsIndex:(NSInteger)index {
+    return [_contactArray objectAtIndex:index];
 }
 
 @end

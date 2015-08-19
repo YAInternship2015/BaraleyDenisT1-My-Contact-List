@@ -34,13 +34,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
      tableView.rowHeight = 80;
-    return _contacts.contactArray.count;
+    return [_contacts itemsCount];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
    AZTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"
                                        forIndexPath:indexPath];
    
-    AZContact *currentContact = [_contacts.contactArray objectAtIndex:indexPath.row];
+    AZContact *currentContact = [_contacts itemsIndex:indexPath.row];
     [cell setupObject:currentContact];
     
     return cell;
