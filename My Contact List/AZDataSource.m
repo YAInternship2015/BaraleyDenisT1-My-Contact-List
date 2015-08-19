@@ -11,13 +11,9 @@
 
 @implementation AZDataSource
 
-#warning лишняя пустая строка
-#warning открывающаяся фигурная скобка должна быть на той же строке, где и имя метода
-- (id)init
-{
+- (id)init {
     self = [super init];
     if (self) {
-#warning лишняя пустая строка
         AZContact *lina = [[AZContact alloc] initWithName:@"Lina" contactImageName:@"1.jpg"];
         AZContact *olya = [[AZContact alloc] initWithName:@"Olya" contactImageName:@"2.jpg"];
         AZContact *sveta = [[AZContact alloc] initWithName:@"Sveta" contactImageName:@"3.jpg"];

@@ -20,14 +20,10 @@
 
 @implementation AZTableViewCell
 
-#warning правильное форматирование имени данного метода - (void)setupObject:(AZContact *)object
--(void) setupObject:(AZContact*) object{
+- (void)setupObject:(AZContact *)object {
    
     [self.myImage setImage:[UIImage imageNamed:object.imageName]];
     [self.myText setText: object.name];
 }
-
-#warning здесь куча лишних строк
-
 
 @end
