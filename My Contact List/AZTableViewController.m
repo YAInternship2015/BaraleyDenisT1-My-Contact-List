@@ -40,7 +40,7 @@
    AZTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"
                                        forIndexPath:indexPath];
    
-    AZContact *currentContact = [_contacts itemsIndex:indexPath.row];
+    AZContact *currentContact = (AZContact *)[_contacts itemsIndex:indexPath.row];
     [cell setupObject:currentContact];
     
     return cell;
